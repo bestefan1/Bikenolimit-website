@@ -1,0 +1,99 @@
+body{
+    --culoare-fundal: rgb(47, 135, 56);
+    --culoare-contur: rgb(61, 81, 234);
+    --margine-pagina: 150px;
+    background-color: var(--culoare-fundal) ;
+}
+p{
+    border: 1px solid var(--culoare-fundal);
+}
+main{
+    margin-left: var(--margine-pagina);
+    margin-right: var(--margine-pagina);
+}
+#grid-pagina
+{
+    display: grid;
+    gap:10px;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: "welcome welcome welcome"
+                        "promotii promotii anunturi"
+                        "fig1 orar orar"
+                        "fig2 orar orar"
+                        "fig3 orar orar"
+                        "produse produse produse"
+                        "index-intrebari index-intrebari index-intrebari";
+                    }
+#grid-pagina > *
+{
+  border: 1px solid var(--culoare-contur);
+  box-shadow: 1px 0px 5px var(--culoare-contur);  
+  padding: 10px;
+}
+figure{ /*resetare spatiere*/
+    margin: 0;
+
+}
+figure>img{
+    width: 100%;
+}
+
+.ballet {
+  font-family: "Ballet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+#welcome{
+    grid-area: welcome;
+}
+#promotii{
+    grid-area: promotii;
+}
+#anunturi{
+    grid-area: anunturi;
+}
+#orar{
+    grid-area: orar;
+}
+#fig1{
+    grid-area: fig1;
+}
+#fig2{
+    grid-area: fig2;
+}
+#fig3{
+    grid-area: fig3;
+}
+#produse{
+    grid-area: produse;
+}
+#index-intrebari{
+    grid-area: index-intrebari;
+}
+
+@media screen and (max-width:1200px){
+ body{
+    --margine-pagina: 80px;
+    }   
+    #grid-pagina
+{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "welcome welcome"
+                        "promotii promotii" 
+                        "anunturi anunturi"
+                        "fig1 orar"
+                        "fig2 orar"
+                        "fig3 orar"
+                        "produse produse"
+                        "index-intrebari index-intrebari";
+                    }
+}
+@media screen and (max-width:700px){
+    #grid-pagina{
+        display: block;
+    }
+    body{
+    --margine-pagina: 50px;
+    }   
+}
