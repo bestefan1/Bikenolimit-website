@@ -15,30 +15,52 @@
     <link rel="manifest" href="./resurse/ico/site.webmanifest">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https:.fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./resurse/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./resurse/css/navigatie.css" type="text/css">
     <link rel="stylesheet" href="./resurse/css/general.css" type="text/css">
 </head>
-<body id="top"> <header>
-        <h1>Bikenolimit</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Acasă</a>
-                    <ul>
-                        <li><a href="#welcome">Prezentare</a></li>
-                        <li><a href="#evenimente">Evenimente</a></li>
-                        <li><a href="#promotii">Promoții</a></li>
-                        <li><a href="#categorii">Categorii Principale</a></li>
-                        <li><a href="#selector">Selector Înălțime</a></li>
-                        <li><a href="#tabel-preturi">Tarife Service</a></li>
-                        <li><a href="#tutoriale">Tutoriale</a></li>
+
+<body id="top">
+    <div id="watermark">Balan<br>Eduard-Stefan</div>
+
+    <header>
+        <h1><i class="fa-solid fa-bicycle"></i> Bikenolimit</h1>
+        
+        <nav class="nav-principal">
+            <input type="checkbox" id="ch-menu">
+            <label for="ch-menu" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="meniu">
+                <li>
+                    <a href="index.html" class="opt-acasa">
+                        <i class="fa-solid fa-house"></i> <span>Acasă</span>
+                    </a>
+                    <ul class="submeniu">
+                        <li><a href="#zona1">Prezentare</a></li>
+                        <li><a href="#zona2">Tarife Service</a></li>
+                        <li><a href="#zona8">Tutoriale</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Magazin</a></li>
-                <li><a href="#">Service & Atelier</a></li>
-                <li><a href="#">Coș Cumpărături</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-store"></i> <span>Magazin</span></a>
+                    <ul class="submeniu">
+                        <li><a href="mtb.html">MTB / Trail</a></li>
+                        <li><a href="cursiere.html">Cursiere Speed</a></li>
+                        <li><a href="accesorii.html">Echipament</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-screwdriver-wrench"></i> <span>Service</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> <span>Coș</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i> <span>Contact</span></a></li>
             </ul>
         </nav>
     </header>
@@ -47,9 +69,10 @@
         
         <section id="zona1">
             <hgroup>
-                <h2>Echipament fără limite <i class="fa-solid fa-gear fa-spin"></i></h2> <p>Descoperă gama Bikenolimit pentru profesioniști și amatori</p>
+                <h2>Echipament fără limite <i class="fa-solid fa-gear fa-spin"></i></h2>
+                <p>Descoperă gama Bikenolimit pentru profesioniști și amatori</p>
             </hgroup>
-            <p>La <b>Bikenolimit</b>, ne concentrăm pe calitatea componentelor. Fie că ai nevoie de un <b>MTB</b> pentru munte sau o <b>cursiera</b> pentru viteză, folosim exclusiv piese <b>Shimano</b> de ultimă generație.</p>
+            <p>La <b>Bikenolimit</b>, ne concentrăm pe calitatea componentelor. Folosim exclusiv piese <b>Shimano</b> de ultimă generație.</p>
             <blockquote>
                 "Bicicleta este cel mai eficient mecanism creat vreodată."
                 <cite>— Bill Nye</cite>
@@ -57,14 +80,13 @@
             <dl>
                 <dt><dfn id="def-cadru">Cadru Carbon</dfn></dt>
                 <dd>Material ultra-ușor folosit pentru bicicletele de competiție <i>high-end</i>.</dd>
-                <dt>Sistem 1x12</dt>
-                <dd>Configurație modernă a transmisiei pentru control maxim pe teren accidentat.</dd>
             </dl>
         </section>
 
         <section id="zona2">
             <h3>Tarife si Servicii Service</h3>
-            <div class="tabel-container"> <table>
+            <div class="tabel-container">
+                <table>
                     <caption>Grilă Tarife Service 2026</caption>
                     <thead>
                         <tr>
@@ -98,12 +120,6 @@
                             <td>-</td>
                             <td>40</td>
                         </tr>
-                        <tr>
-                            <td>Montaj Accesorii</td>
-                            <td>Orice model</td>
-                            <td>12 luni</td>
-                            <td>30</td>
-                        </tr>
                     </tbody>
                     <tfoot>
                         <tr>
@@ -121,7 +137,8 @@
                 <li><time datetime="2026-04-10T10:00">10 Aprilie</time> - Deschiderea Sezonului</li>
                 <li><time datetime="2026-05-05T18:00">5 Mai</time> - Noaptea Mecanicilor</li>
             </ol>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
 
         <section id="zona4">
             <h3>Anunțuri Stoc</h3>
@@ -129,29 +146,32 @@
                 <p>Ocupare atelier: <meter value="0.9" min="0" max="1"></meter></p>
                 <p>Stoc electrice: <meter value="0.15" min="0" max="1"></meter></p>
             </article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
 
         <section id="zona5"><h3>Utilizatori Online</h3><p>Lorem ipsum dolor sit amet...</p></section>
-        <section id="zona6"><h3>Statistici</h3><p>Lorem ipsum dolor sit amet...</p></section>
+        <section id="zona6"><h3>Statistici Site</h3><p>Lorem ipsum dolor sit amet...</p></section>
         <section id="zona7"><h3>Server Info</h3><p>Lorem ipsum dolor sit amet...</p></section>
 
         <section id="zona8">
-            <h3>Diverse și Tutoriale</h3>
+            <h3>Media și Tutoriale</h3>
             
             <div class="math-container">
                 <p>Calcul Gear Ratio:</p>
-                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="stilizare-formula">
-                 <mi class="math-result">GR</mi> <mo class="math-op">=</mo>
-                 <mfrac>
-                 <msub>
-                 <mi class="math-top">N</mi>
-                 <mi class="math-sub">f</mi>
-                 </msub>
-                 <msub>
-                 <mi class="math-bottom">N</mi>
-                 <mi class="math-sub">s</mi>
-                 </msub>
-                 </mfrac> 
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="formula-stilizata">
+                    <mrow>
+                        <mi class="math-result">GR</mi> <mo class="math-op">=</mo>
+                        <mfrac>
+                            <msub>
+                                <mi class="math-top">N</mi>
+                                <mi class="math-sub">f</mi>
+                            </msub>
+                            <msub>
+                                <mi class="math-bottom">N</mi>
+                                <mi class="math-sub">s</mi>
+                            </msub>
+                        </mfrac> 
+                    </mrow>
                 </math>
             </div>
 
@@ -161,7 +181,7 @@
                     <source srcset="./resurse/imagini/bike-800.jpg" media="(max-width: 1024px)">
                     <img src="./resurse/imagini/bike-1200.jpg" alt="Bicicleta Pro">
                 </picture>
-                <figcaption>Bicicletă optimizată.</figcaption>
+                <figcaption>Bicicletă optimizată pentru performanță.</figcaption>
             </figure>
 
             <div class="container-iframe">
@@ -173,35 +193,35 @@
                 <iframe name="ifr-main" width="560" height="315" src="https://www.youtube.com/embed/_rPOrRQlcx4" allowfullscreen></iframe>
             </div>
 
-           <div class="resurse-externe">
-        <h4>Linkuri utile</h4>
-        <ul>
-            <li>Vizitează <a href="https://www.pinkbike.com" target="_blank">Pinkbike</a> pentru noutăți.</li>
-            <li>Documentație tehnică: <a href="https://bike.shimano.com#service-manuals">https://bike.shimano.com<wbr>#service-manuals</a></li>
-            <li>Descarcă logo-ul nostru: <a href="./resurse/imagini/logobikenolimit.png" download="Bikenolimit_Logo.png">Download Logo</a></li>
-            <li>Vezi certificarea noastră: 
-                <a href="./resurse/imagini/certificat.png">
-                    <img src="./resurse/imagini/certificat-mic.png" alt="Certificat" style="width:1px; vertical-align: middle;">
-                </a>
-            </li>
-        </ul>
-    </div>
+            <div class="resurse-externe">
+                <h4>Linkuri utile</h4>
+                <ul>
+                    <li>Vizitează <a href="https://www.pinkbike.com" target="_blank">Pinkbike</a></li>
+                    <li>Documentație: <a href="https://bike.shimano.com#service">https://bike.shimano.com<wbr>#service</a></li>
+                    <li>Download Logo: <a href="./resurse/imagini/logo.png" download>Descarcă</a></li>
+                    <li>Certificare: 
+                        <a href="./resurse/imagini/certificat.png">
+                            <img src="./resurse/imagini/certificat-mic.png" alt="Certificat" style="width:25px; vertical-align: middle;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-    <div class="faq-section">
-        <h4>Întrebări Frecvente</h4>
-        <details>
-            <summary>Cât durează o revizie?</summary>
-            <p>În mod normal, bicicleta este gata în 24 de ore, în funcție de complexitate.</p>
-        </details>
-        <details>
-            <summary>Aveți piese în stoc?</summary>
-            <p>Da, avem o gamă largă de piese <b>Shimano</b> și SRAM disponibile imediat în magazin.</p>
-        </details>
-    </div>
+            <div id="faq" class="faq-section">
+                <h4>Întrebări Frecvente</h4>
+                <details>
+                    <summary>Cât durează o revizie?</summary>
+                    <p>În mod normal, bicicleta este gata în 24 de ore.</p>
+                </details>
+                <details>
+                    <summary>Aveți piese în stoc?</summary>
+                    <p>Da, avem o gamă largă de piese Shimano disponibile.</p>
+                </details>
+            </div>
         </section>
     </main>
 
- <footer>
+    <footer>
         <address>
             <strong>Contact Bikenolimit:</strong><br>
             Telefon: <a href="tel:+40123456789012345">09998888888</a><br>
