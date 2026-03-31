@@ -1,0 +1,138 @@
+@charset "UTF-8";
+body {
+  --nav-bg: #66EDD3;
+  --nav-text: #fff;
+  --nav-glow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+  --nav-accent: #B5EDCF;
+}
+
+.nav-principal .meniu li a {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  color: var(--nav-text);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.nav-principal {
+  background-color: var(--nav-bg);
+  position: relative;
+}
+.nav-principal #ch-menu {
+  display: none;
+}
+.nav-principal .hamburger {
+  display: none;
+}
+.nav-principal .meniu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+.nav-principal .meniu li {
+  position: relative;
+  background-color: var(--nav-bg);
+}
+.nav-principal .meniu li a span {
+  margin-left: 8px;
+}
+.nav-principal .meniu li a:hover {
+  box-shadow: var(--nav-glow);
+  color: var(--nav-accent);
+}
+.nav-principal .meniu li .submeniu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 220px;
+  background-color: #111;
+  list-style: none;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.4s ease;
+  z-index: 100;
+  border: 1px solid #333;
+}
+.nav-principal .meniu li .submeniu li a {
+  padding: 12px 20px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #222;
+}
+.nav-principal .meniu li .submeniu li a::before {
+  content: "→";
+  margin-right: 10px;
+  opacity: 0;
+  transform: translateX(-15px);
+  transition: all 0.3s ease;
+}
+.nav-principal .meniu li .submeniu li a:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+.nav-principal .meniu li:hover .submeniu {
+  transform: scaleY(1);
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-principal .meniu li a {
+    padding: 15px;
+  }
+  .nav-principal .meniu li a span {
+    display: none;
+  }
+  .nav-principal .meniu li a i {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav-principal .hamburger {
+    display: block;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  .nav-principal .meniu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-principal .meniu li {
+    width: 100%;
+  }
+  .nav-principal .meniu li .opt-acasa span {
+    display: none;
+  }
+  .nav-principal .meniu li .submeniu li a::before {
+    display: none;
+  }
+  .nav-principal .meniu li a {
+    justify-content: flex-start;
+    border-bottom: 1px solid #222;
+  }
+  .nav-principal .meniu li .submeniu {
+    position: static;
+    width: 100%;
+    transform: scaleY(0);
+  }
+  .nav-principal #ch-menu:checked ~ .meniu {
+    display: flex;
+    animation: animatieBurger 0.5s ease forwards;
+  }
+}
+@keyframes animatieBurger {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=navigatie.css.map */
