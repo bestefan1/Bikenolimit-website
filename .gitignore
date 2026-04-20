@@ -3,3 +3,7 @@
 node_modules/
 package-lock.json
 .vscode/
+temp/
+logs/
+backup/
+fisiere_uploadate/

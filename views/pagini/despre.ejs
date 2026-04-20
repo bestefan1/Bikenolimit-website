@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <%- include("../fragmente/head") %>
+    <title>Bikenolimit - Despre Noi</title>
+</head>
+<body>
+    <%- include("../fragmente/header") %>
+    <main>
+        <section>
+            <h2>Istoricul Nostru</h2>
+            <p>Bikenolimit a început dintr-o pasiune pentru două roți în anul 2010...</p>
+            </section>
+            <section id="sectiune-video">
+    <h3>Vezi prezentarea noastră</h3>
+    
+    <video poster="/resurse/imagini/poster-video.png" controls preload="auto" class="video-proiect">
+        <source src="/resurse/video/prezentare.mp4" type="video/mp4">
+        <source src="/resurse/video/prezentare.webm" type="video/webm">
+        
+        <track src="/resurse/video/subtitrare_ro.vtt" kind="subtitles" srclang="ro" label="Română" default>
+        <track src="/resurse/video/subtitrare_en.vtt" kind="subtitles" srclang="en" label="English">
+        
+        Din păcate, browserul tău nu suportă formatul video.
+    </video>
+</section>
+    </main>
+    <%- include("../fragmente/footer") %>
+</body>
+</html>

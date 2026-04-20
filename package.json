@@ -1,0 +1,30 @@
+{
+  "name": "proiect-bikenolimit",
+  "version": "1.0.0",
+  "description": "Magazin si Service Biciclete-Proiect Tehnici Web",
+  "keywords": [
+    "biciclete",
+    "service",
+    "mtb",
+    "bikenolimit"
+  ],
+  "homepage": "https://github.com/bestefan1/Bikenolimit-website#readme",
+  "bugs": {
+    "url": "https://github.com/bestefan1/Bikenolimit-website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bestefan1/Bikenolimit-website.git"
+  },
+  "license": "ISC",
+  "author": "Balan Eduard-Stefan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^5.0.2",
+    "express": "^5.2.1"
+  }
+}

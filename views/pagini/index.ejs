@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ro">
+<%- include("../fragmente/head") %>
+<body>
+<%- include("../fragmente/header") %>
+
+<main id="grid-principal">
+     <section id="zona1">
+            <hgroup>
+                <h2>Echipament fără limite <i class="fa-solid fa-gear fa-spin"></i></h2>
+                <p>Descoperă gama Bikenolimit pentru profesioniști și amatori</p>
+            </hgroup>
+            <p>La <b>Bikenolimit</b>, ne concentrăm pe calitatea componentelor. Folosim exclusiv piese <b>Shimano</b> de ultimă generație.</p>
+            <blockquote>
+                "Bicicleta este cel mai eficient mecanism creat vreodată."
+                <cite>— Bill Nye</cite>
+            </blockquote>
+            <dl>
+                <dt><dfn id="def-cadru">Cadru Carbon</dfn></dt>
+                <dd>Material ultra-ușor folosit pentru bicicletele de competiție <i>high-end</i>.</dd>
+            </dl>
+        </section>
+
+        <section id="zona2">
+            <h3>Tarife si Servicii Service</h3>
+            <div class="tabel-container">
+                <table>
+                    <caption>Grilă Tarife Service 2026</caption>
+                    <thead>
+                        <tr>
+                            <th>Serviciu</th>
+                            <th>Tip Bicicletă</th>
+                            <th>Garanție</th>
+                            <th>Preț (RON)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Revizie Standard</td>
+                            <td>MTB / Road</td>
+                            <td>6 luni</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td>City / Kids</td>
+                            <td>6 luni</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Aerisire Frâne</td>
+                            <td>Hidraulice</td>
+                            <td>3 luni</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Centrat Roată</td>
+                            <td>Toate</td>
+                            <td>-</td>
+                            <td>40</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Abonament anual (3 revizii incluse)</td>
+                            <td>500</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section id="zona3">
+            <h3>Evenimente Comunitare</h3>
+            <ol>
+                <li><time datetime="2026-04-10T10:00">10 Aprilie</time> - Deschiderea Sezonului</li>
+                <li><time datetime="2026-05-05T18:00">5 Mai</time> - Noaptea Mecanicilor</li>
+            </ol>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <section id="zona4">
+            <h3>Anunțuri Stoc</h3>
+            <article>
+                <p>Ocupare atelier: <meter value="0.9" min="0" max="1"></meter></p>
+                <p>Stoc electrice: <meter value="0.15" min="0" max="1"></meter></p>
+            </article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <section id="zona5"><h3>Utilizatori Online</h3><p>Lorem ipsum dolor sit amet...</p></section>
+        <section id="zona6"><h3>Statistici Site</h3><p>Lorem ipsum dolor sit amet...</p></section>
+        <section id="zona7"><h3>Server Info</h3><p>Lorem ipsum dolor sit amet...</p></section>
+
+        <section id="zona8">
+            <h3>Media și Tutoriale</h3>
+            
+            <div class="math-container">
+                <p>Calcul Gear Ratio:</p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block" class="formula-stilizata">
+                    <mrow>
+                        <mi class="math-result">GR</mi> <mo class="math-op">=</mo>
+                        <mfrac>
+                            <msub>
+                                <mi class="math-top">N</mi>
+                                <mi class="math-sub">f</mi>
+                            </msub>
+                            <msub>
+                                <mi class="math-bottom">N</mi>
+                                <mi class="math-sub">s</mi>
+                            </msub>
+                        </mfrac> 
+                    </mrow>
+                </math>
+            </div>
+
+            <figure>
+                <picture>
+                    <source srcset="./resurse/imagini/bike-300.jpg" media="(max-width: 600px)">
+                    <source srcset="./resurse/imagini/bike-800.jpg" media="(max-width: 1024px)">
+                    <img src="./resurse/imagini/bike-1200.jpg" alt="Bicicleta Pro">
+                </picture>
+                <figcaption>Bicicletă optimizată pentru performanță.</figcaption>
+            </figure>
+
+            <div class="container-iframe">
+                <div class="taburi-iframe">
+                    <a href="https://www.youtube.com/embed/ELVvUSv71GU" target="ifr-main">Tutorial Lanț</a>
+                    <a href="https://www.youtube.com/embed/ZYJH-4vdRxA" target="ifr-main">Tutorial Frâne</a>
+                    <a href="https://www.youtube.com/embed/_rPOrRQlcx4" target="ifr-main">Video Reset</a>
+                </div>
+                <iframe name="ifr-main" width="560" height="315" src="https://www.youtube.com/embed/_rPOrRQlcx4" allowfullscreen></iframe>
+            </div>
+
+            <div class="resurse-externe">
+                <h4>Linkuri utile</h4>
+                <ul>
+                    <li>Vizitează <a href="https://www.pinkbike.com" target="_blank">Pinkbike</a></li>
+                    <li>Documentație: <a href="https://bike.shimano.com#service">https://bike.shimano.com<wbr>#service</a></li>
+                    <li>Download Logo: <a href="./resurse/imagini/logo.png" download>Descarcă</a></li>
+                    <li>Certificare: 
+                        <a href="./resurse/imagini/certificat.png">
+                            <img src="./resurse/imagini/certificat-mic.png" alt="Certificat" style="width:25px; vertical-align: middle;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="faq" class="faq-section">
+                <h4>Întrebări Frecvente</h4>
+                <details>
+                    <summary>Cât durează o revizie?</summary>
+                    <p>În mod normal, bicicleta este gata în 24 de ore.</p>
+                </details>
+                <details>
+                    <summary>Aveți piese în stoc?</summary>
+                    <p>Da, avem o gamă largă de piese Shimano disponibile.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+<%- include("../fragmente/footer") %>
+</body>
+</html>

@@ -283,3 +283,76 @@ tr:hover td:hover { background-color: var(--c2); }
         pointer-events: none;
     }
 }
+
+
+/* video */
+.video-proiect {
+    width: 80%;           
+    max-width: 800px;     
+    min-width: 100px;      
+    height: auto;          
+    display: block;
+    margin: 30px auto;     
+    border: 5px solid #333; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+::cue {
+    background: transparent; 
+}
+
+::cue(v.linie) {
+    background-image: linear-gradient(to bottom, #1a1a1a, #4d4d4d); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+
+:root {
+    --culoare-vizitat: #800080 !important; 
+    --culoare-pata: rgba(0, 191, 255, 0.5) !important;
+}
+
+main a:visited {
+    color: var(--culoare-vizitat) !important;
+}
+
+
+main a[href^="http"]::before, 
+main a[href^="https"]::before {
+    content: "⮳" !important;
+    font-size: 1.5em !important;
+    margin-right: 5px !important;
+    display: inline-block !important;
+    color: inherit;
+}
+
+
+main a[href^="http"]:hover::before {
+    color: #ff0000 !important; 
+}
+
+
+main a {
+    position: relative !important;
+    display: inline-block; 
+    background-image: radial-gradient(circle, var(--culoare-pata) 0%, var(--culoare-pata) 40%, transparent 80%, transparent 100%) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: 0% 0% !important; 
+    transition: background-size 0.5s ease !important;
+    text-decoration: underline !important;
+    color: #0000EE; 
+}
+
+main a:hover {
+    background-size: 100% 100% !important; 
+}
+
+main a:active {
+    outline: 2px solid black !important;
+    outline-offset: 2px !important;
+}

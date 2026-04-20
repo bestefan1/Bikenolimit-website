@@ -1,0 +1,31 @@
+{
+    "cale_baza": "/resurse/imagini/erori",
+    "eroare_default": {
+        "titlu": "Eroare Necunoscută",
+        "text": "Echipa de mecanici a fost trimisă pe teren.",
+        "imagine": "default_error.png"
+    },
+    "info_erori": [
+        {
+            "identificator": 404,
+            "status": true,
+            "titlu": "Traseu Pierdut (404)",
+            "text": "Pagina căutată nu a fost găsită. Poate ai luat-o pe un drum greșit.",
+            "imagine": "404.png"
+        },
+        {
+            "identificator": 403,
+            "status": true,
+            "titlu": "Acces Interzis (403)",
+            "text": "Nu ai permisiunea de a vizualiza acest folder.",
+            "imagine": "403.png"
+        },
+        {
+            "identificator": 400,
+            "status": true,
+            "titlu": "Cerere Invalidă (400)",
+            "text": "Nu poți accesa direct fișierele template .ejs.",
+            "imagine": "400.png"
+        }
+    ]
+}
