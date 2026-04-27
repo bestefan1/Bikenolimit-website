@@ -1,0 +1,41 @@
+{
+    "cale_galerie": "/resurse/imagini/",
+    "imagini": [
+        {
+            "fisier_imagine": "bike-1200.jpg",
+            "nume_poza": "Bicicleta 1",
+            "descriere_poza": "Bicicletă de top pentru trasee lungi.",
+            "intervale_zile": [["duminica", "sambata"]]
+        },
+        {
+            "fisier_imagine": "bike-800.jpg",
+            "nume_poza": "Bicicleta 2",
+            "descriere_poza": "Ideală pentru antrenamente zilnice.",
+            "intervale_zile": [["duminica", "sambata"]]
+        },
+        {
+            "fisier_imagine": "bike-1200.jpg",
+            "nume_poza": "Bicicleta 3",
+            "descriere_poza": "Model performant ediție 2026.",
+            "intervale_zile": [["duminica", "sambata"]]
+        },
+        {
+            "fisier_imagine": "bike-800.jpg",
+            "nume_poza": "Bicicleta 4",
+            "descriere_poza": "Fiabilitate maximă în oraș.",
+            "intervale_zile": [["duminica", "sambata"]]
+        },
+        {
+            "fisier_imagine": "bike-1200.jpg",
+            "nume_poza": "Bicicleta 5",
+            "descriere_poza": "Echipare Shimano profesională.",
+            "intervale_zile": [["duminica", "sambata"]]
+        },
+        {
+            "fisier_imagine": "bike-800.jpg",
+            "nume_poza": "Bicicleta 6",
+            "descriere_poza": "Ușoară și aerodinamică.",
+            "intervale_zile": [["duminica", "sambata"]]
+        }
+    ]
+}

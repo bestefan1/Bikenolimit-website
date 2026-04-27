@@ -1,0 +1,16 @@
+<div class="galerie-grid">
+    <% imagini.forEach((img, index) => { %>
+        <figure class="galerie-item">
+            <picture>
+                <source srcset="<%= img.cale_mic %>" media="(max-width: 600px)">
+                <source srcset="<%= img.cale_mediu %>" media="(max-width: 1000px)">
+                <img src="<%= img.cale_mare %>" 
+                     alt="<%= img.continut_alternativ || img.nume_poza %>" 
+                     title="<%= img.descriere_poza %>">
+            </picture>
+            <figcaption>
+                <span class="index-poza"></span> <%= img.descriere_poza %>
+            </figcaption>
+        </figure>
+    <% }); %>
+</div>

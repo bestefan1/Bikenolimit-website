@@ -7,3 +7,9 @@ temp/
 logs/
 backup/
 fisiere_uploadate/
+resurse/imagini/mediu/
+resurse/imagini/mic/
+Thumbs.db
+.DS_Store
+.npm
+.eslintcache

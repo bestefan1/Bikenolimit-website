@@ -1,0 +1,31 @@
+$menta-inchis: #66EDA5; // c1
+$menta-bleu: #66EDD3;   // c2
+$menta-lime: #89ED66;   // c4
+$menta-pal: #B5EDCF;    // c5
+$text-inchis: #1a3326;
+
+$primary: $menta-inchis;
+$success: $menta-lime;
+$info:    $menta-bleu;
+$body-bg: #fafffd; // bg-pag
+$body-color: $text-inchis;
+
+$font-family-sans-serif: 'Segoe UI', Roboto, Arial, sans-serif;
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.navbar {
+    background-color: $menta-pal !important;
+    border-bottom: 2px solid $menta-inchis;
+}
+
+.btn-primary {
+    border-radius: 20px; 
+    color: $text-inchis;
+    font-weight: bold;
+    &:hover {
+        background-color: $menta-bleu;
+        border-color: $menta-bleu;
+    }
+}
